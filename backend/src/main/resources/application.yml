@@ -1,0 +1,7 @@
+# Copyright 2026 上海如静知华信息科技有限公司 · https://www.zhuatech.cn/
+spring.application.name: zhuatech-imagesearch
+server.port: ${SERVER_PORT:8080}
+zhuatech.image-search.provider: ${ZHUATECH_IMAGE_SEARCH_PROVIDER:local}
+zhuatech.image-search.base-url: ${ZHUATECH_IMAGE_SEARCH_BASE_URL:}
+zhuatech.image-search.model: ${ZHUATECH_IMAGE_SEARCH_MODEL:vision-embedding-provider-model}
+zhuatech.image-search.api-key: ${ZHUATECH_IMAGE_SEARCH_API_KEY:}
