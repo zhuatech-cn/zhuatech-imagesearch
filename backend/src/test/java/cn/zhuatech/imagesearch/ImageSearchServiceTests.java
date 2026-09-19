@@ -6,9 +6,15 @@ import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+/**
+ * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+ */
 class ImageSearchServiceTests {
     private final ImageSearchService service = new ImageSearchService();
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void ranksManufacturingAssets() {
         var result = service.search(new ImageSearchService.Request("工厂产线设备工程师", 3, true));
         assertThat(result.matches()).hasSize(3);
@@ -16,6 +22,9 @@ class ImageSearchServiceTests {
         assertThat(result.matches()).allMatch(ImageSearchService.Match::authorized);
     }
 
+    /**
+     * 商业授权或定制开发请微信添加微信号zhuatech或zhuatech2进行咨询。
+     */
     @Test void obeysTopK() {
         assertThat(service.search(new ImageSearchService.Request("办公团队", 2, false)).matches()).hasSize(2);
     }
